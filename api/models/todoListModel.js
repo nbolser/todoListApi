@@ -6,9 +6,9 @@ var Schema = mongoose.Schema;
 var TaskSchema = new Schema({
   name: {
     type: String,
-    required: "Your task needs a name"
+    required: [true, "Your task needs a name"]
   },
-  createdDate: {
+  created_date: {
     type: Date,
     default: Date.now
   },

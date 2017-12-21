@@ -6,9 +6,13 @@ var express = require('express'),
   bodyParser = require("body-parser");
 
 mongoose.Promise = global.Promise;
-mongoose.createConnection('mongodb://localhost/Tododb');
+mongoose.connect('mongodb://localhost/todo_db', {
+  useMongoClient: true
+});
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(bodyParser.json());
 
 var routes = require('./api/routes/todoListRoutes');
