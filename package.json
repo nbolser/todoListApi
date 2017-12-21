@@ -11,12 +11,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.13.3"
+    "nodemon": "^1.13.3",
+    "pryjs": "1.0.3"
   },
   "dependencies": {
     "body-parser": "1.18.2",
     "express": "4.16.2",
-    "mongoose": "4.13.7",
-    "pryjs": "1.0.3"
+    "mongoose": "4.13.7"
   }
 }
